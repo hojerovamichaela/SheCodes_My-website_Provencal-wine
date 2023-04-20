@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Provencal wine</title>
+  </head>
+  <style>
+    body {
+      background: linear-gradient(
+        106.5deg,
+        rgba(235, 181, 141, 0.91) 23%,
+        rgba(223, 159, 247, 0.8) 93%
+      );
+    }
+    h1 {
+      text-align: center;
+      color: #5b446a;
+      font-family: "Montserrat", sans-serif;
+      padding: 15px;
+      font-size: 40px;
+      border: 2px solid #5b446a;
+      border-radius: 10px;
+    }
+    h2 {
+      text-align: center;
+      color: #9e75a2;
+      font-family: "Montserrat", sans-serif;
+      padding: 20px 20px 20px;
+      margin: 10px 20px;
+    }
+    img {
+      max-width: 80%;
+      display: block;
+      margin: 0 auto;
+      padding: 20px;
+      border: 0px;
+      border-radius: 10px;
+    }
+    p {
+      line-height: 2;
+      font-family: "Montserrat", sans-serif;
+      margin: 20px 0 10px;
+    }
+    button {
+      display: block;
+      margin: 20px auto;
+      background: #5b446a;
+      color: white;
+      font-size: 24px;
+      padding: 20px;
+      border-radius: 4px;
+      border-color: #5b446a;
+      padding: 20px auto;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    button:hover {
+      color: white;
+      opacity: 0.9;
+      cursor: pointer;
+      transition: all 200ms ease-in-out;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 30px 60px;
+    }
+    .learn-more {
+      display: block;
+      padding: 20px;
+      text-decoration: none;
+    }
+
+    .learn-more:hover {
+      text-decoration: underline;
+      color: #5b446a;
+    }
+
+    .footer {
+      text-align: center;
+      font-family: "Montserrat", sans-serif;
+      font-size: 13px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1><strong>I love wine</strong></h1>
+      <h2>Especially from Provence</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/073/374/original/provence-wine-region.jpg?1679654523"
+        alt="Lavender and wine"
+      />
+      <p>
+        Provençal wine comes from the French wine-producing region of Provence
+        in southeast France. The Romans called the area provincia nostra ("our
+        province"), giving the region its name.
+      </p>
+
+      <p>
+        Just south of the Alps, it was the first Roman province outside Italy.
+        Wine has been made in this region for at least 2,600 years, ever since
+        the ancient Greeks founded the city of Marseille in 600 BC. Throughout
+        the region's history, viticulture and winemaking have been influenced by
+        the cultures that have been present in Provence, which include the
+        Ancient Greeks, Romans, Gauls, Catalans and Savoyards. These diverse
+        groups introduced a large variety of grapes to the region, including
+        grape varieties of Greek and Roman origin as well as Spanish, Italian
+        and traditional French wine grapes.
+      </p>
+
+      <p>
+        Today the region is known predominantly for its rosé wine, which
+        currently accounts for more than half of the production of Provençal
+        wine, with red wine accounting for about a third of the region's
+        production. White wine is also produced in small quantities throughout
+        the region with the Appellation d'origine contrôlée (AOC) region of
+        Cassis specializing in white wine production. The Côtes de Provence is
+        the largest AOC followed by the Coteaux d'Aix-en-Provence.
+      </p>
+
+      <br />
+      <a
+        href="https://en.wikipedia.org/wiki/Provence_wine"
+        target="_blank"
+        class="learn-more"
+      >
+        Learn more on Wikipedia
+      </a>
+
+      <button>Buy Rosé</button>
+      <p class="footer"><em />This page was built by Michaela Hojerová</p>
+    </div>
+  </body>
+  <script>
+    function buyRose() {
+      let name = prompt("What is your name?");
+      let email = prompt("What is your email?");
+      if (name.length > 0 && email.length > 0) {
+      }
+
+      alert(
+        "Thank you, " +
+          name +
+          "! We´ll send you order confirmation via email. Take care!"
+      );
+    }
+
+    let buyButton = document.querySelector("button");
+    buyButton.addEventListener("click", buyRose);
+  </script>
+</html>
